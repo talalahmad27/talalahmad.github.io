@@ -1,12 +1,180 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Site</title>
-</head>
-<body>
-  <h1>Welcome to my GitHub Page 🚀</h1>
-  <p>This is my first website.</p>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Talal Ahmad | Portfolio</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styling -->
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: #0d1117;
+      color: #c9d1d9;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      color: #58a6ff;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .card {
+      background: #161b22;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 20px 0;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      line-height: 1.8;
+    }
+
+    .skills img {
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #8b949e;
+    }
+  </style>
+
+  <!-- Typing Effect -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <!-- Zapier Chatbot -->
   <script async type='module' src='https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js'></script>
-  <zapier-interfaces-chatbot-embed is-popup='true' chatbot-id='cmn8uhxw90043if3mql5mvo5s'></zapier-interfaces-chatbot-embed>
+
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- Hero Section -->
+  <div class="center">
+    <h1 id="typing"></h1>
+    <p>Data Analyst | ML | AI Automation</p>
+  </div>
+
+  <!-- About -->
+  <div class="card">
+    <h2>🧠 About Me</h2>
+    <p>📊 Data Analyst | Machine Learning | LLMs & NLP | AI Automation</p>
+    <p>🎓 Master's in Artificial Intelligence – Macquarie University</p>
+    <p>💼 Associate Data Analyst at Lendi Group | AI Intern at Domain | Research Associate</p>
+    <p>📈 Nearly 3 years of IT experience across analytics & AI</p>
+    <p>🌏 Based in Australia</p>
+    <p>📫 <a href="mailto:talalahmad76@gmail.com">talalahmad76@gmail.com</a> |
+       <a href="https://linkedin.com/in/talal-ahmad27" target="_blank">LinkedIn</a></p>
+  </div>
+
+  <!-- Skills -->
+  <div class="card">
+    <h2>🛠️ Skills & Tools</h2>
+    <ul>
+      <li><b>AI:</b> Python, LangChain, PyTorch, TensorFlow</li>
+      <li><b>Data:</b> Power BI, SQL, Snowflake, ETL</li>
+      <li><b>Cloud:</b> AWS, Azure, Zapier</li>
+      <li><b>Domains:</b> ML, NLP, Chatbots, AI Agents</li>
+    </ul>
+
+    <div class="skills center">
+      <img src="https://skillicons.dev/icons?i=python,r,sql,pytorch,tensorflow,aws,azure,git&theme=light&perline=8"/>
+    </div>
+  </div>
+
+  <!-- Work -->
+  <div class="card">
+    <h2>💼 What I Work On</h2>
+    <ul>
+      <li>📊 Power BI dashboards & analytics</li>
+      <li>🧮 SQL pipelines & data engineering</li>
+      <li>🤖 Machine learning models</li>
+      <li>🧠 LLM, NLP & RAG applications</li>
+      <li>⚡ AI chatbot automation using Zapier</li>
+    </ul>
+  </div>
+
+  <!-- Projects -->
+  <div class="card">
+    <h2>🚀 Project Areas</h2>
+    <ul>
+      <li>📈 Data dashboards & KPI reporting</li>
+      <li>🤖 Machine learning solutions</li>
+      <li>💬 AI chatbots & automation</li>
+      <li>🧠 Advanced AI apps (LangChain, RAG)</li>
+    </ul>
+  </div>
+
+  <!-- Achievements -->
+  <div class="card">
+    <h2>🏆 Achievements</h2>
+    <ul>
+      <li>🥇 Medibank Scholarship</li>
+      <li>🎖️ Vice Chancellor Scholarship</li>
+      <li>🏆 Microsoft AI Skills Certificate</li>
+      <li>🥉 Kangaroo Math Contest</li>
+      <li>👨‍🏫 Promoted 4x at Nayatel</li>
+    </ul>
+  </div>
+
+  <!-- Contact -->
+  <div class="card center">
+    <h2>📫 Let's Connect</h2>
+    <p>Open to freelance & opportunities</p>
+    <p>
+      <a href="mailto:talalahmad76@gmail.com">Email</a> |
+      <a href="https://linkedin.com/in/talal-ahmad27" target="_blank">LinkedIn</a>
+    </p>
+  </div>
+
+  <footer>
+    © 2026 Talal Ahmad
+  </footer>
+
+</div>
+
+<!-- Typing Animation Script -->
+<script>
+  var typed = new Typed("#typing", {
+    strings: ["Hi There!", "I'm Talal Ahmad!", "Data Analyst | ML | AI"],
+    typeSpeed: 60,
+    backSpeed: 40,
+    loop: true
+  });
+</script>
+
+<!-- Chatbot -->
+<zapier-interfaces-chatbot-embed 
+  is-popup='true' 
+  chatbot-id='cmn8uhxw90043if3mql5mvo5s'>
+</zapier-interfaces-chatbot-embed>
+
 </body>
 </html>
